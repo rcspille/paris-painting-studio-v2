@@ -10,13 +10,13 @@ html{
 }
 
 .content-width{ /* holds main content of page */
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 /* COLOR THEME */
 :root{
-  --primary:  #7bbf43; /* green */
+  --primary:  /*#7bbf43;*/ #426383; /* green */
   --accent: #437BBF;/* blue */
   --neutral: #6B747D; /* gray */
 }
@@ -44,7 +44,12 @@ html{
 }
 
 .transparent{
-  background-color:rgba(50, 50, 50, .6);
+  background-color:rgba(50, 50, 50, .7);
+  border: 1px groove #dcdcdc;
+}
+
+.shadow{
+  box-shadow: 0px 0px 10px #333;
 }
 
 /* FONT STYLES */
@@ -54,7 +59,8 @@ html{
 
 #spotlight h3{
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: .9rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 #spotlight h1, #spotlight h3{
@@ -65,10 +71,10 @@ html{
 /* HEADER */
 header{
   width: 100%;
-  background-color: var(--neutral);
+  background-color: #50819A;
   font-size: .750rem;
   position: fixed;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
 }
 
 header .content-width{
@@ -78,7 +84,9 @@ header .content-width{
 }
 
 #logo{
-  margin: 10px 0;
+  border: 5px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  margin-top: 10px;
 }
 
 nav{
@@ -107,7 +115,7 @@ nav a:HOVER{
 
 /* SPOTLIGHT */
 #spotlight{
-  background-image:url("https://cdn.tollbrothers.com/communities/12900/images/6658Exterior-(2)_1920.jpg");
+  background-image:url(https://images.estately.net/42_5899358_0_1553196132.jpg);
   background-color: lightblue;
   background-size: cover;
   background-position: center -50px;
