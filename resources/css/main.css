@@ -7,3 +7,63 @@
 html{
   font-size: 16pt;
 }
+
+.content-width{ /* holds main content of page */
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* COLOR THEME */
+:root{
+  --primary: #437BBF; /* blue */
+  --accent: #7bbf43; /* green */
+  --neutral: #6B747D; /* gray */
+}
+
+.primary-bg{
+  background-color: var(--primary);
+}
+
+.accent-bg{
+  background-color: var(--accent);
+}
+
+.neutral-bg{
+  background-color: var(--neutral);
+}
+
+/* HEADER */
+header{
+  width: 100%;
+  font-size: .750rem;
+}
+
+header .content-width{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+nav{
+  display: inline-flex;
+  width: 60%; /* so it doesn't cover the logo */
+  justify-content: flex-end;
+}
+
+nav a{
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav a.active{
+  background-color: var(--accent);
+}
+
+nav a:HOVER{
+  background-color: var(--accent);
+  transition: .5s ease;
+}
